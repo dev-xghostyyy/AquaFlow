@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О компании — AquaFlow</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<header class="navbar page-nav" id="navbar">
+  <nav class="navbar-inner container" aria-label="Главная навигация">
+    <a href="index.html" class="nav-logo">AquaFlow</a>
+    <ul class="nav-links" style="list-style:none">
+      <li><a href="index.html"   class="nav-link">Главная</a></li>
+      <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+      <li><a href="about.html"   class="nav-link active">О компании</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="nav-cart-btn" aria-label="Корзина">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Корзина<span class="cart-badge">0</span>
+      </a>
+      <a href="login.html" class="nav-login-btn">Войти</a>
+    </div>
+    <button class="hamburger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+    </button>
+  </nav>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О компании</a>
+    <a href="cart.html">Корзина</a>
+    <a href="login.html">Войти</a>
+  </nav>
+</header>
+
+<main>
+  <!-- About hero -->
+  <div class="about-hero">
+    <div class="about-hero-bg" aria-hidden="true"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="about-hero-inner">
+        <div class="hero-eyebrow" style="justify-content:flex-start">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#67E8F9" stroke="none"><circle cx="12" cy="12" r="12"/></svg>
+          С 2012 года
+        </div>
+        <h1 class="about-hero-title">Мы помогаем создавать<br><span style="color:#67E8F9">живое искусство</span></h1>
+        <p class="about-hero-sub">AquaFlow — ведущий российский интернет-магазин всего необходимого для аквариумистики. Мы работаем с 2012 года и помогли более 15 000 клиентам создать их идеальный подводный мир.</p>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#F0F9FF"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <section class="stats-section" aria-label="Наши достижения" style="padding-top:20px">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-num" id="s-clients">15 000+</div>
+          <div class="stat-label">довольных клиентов</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">50 000+</div>
+          <div class="stat-label">выполненных заказов</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">12+</div>
+          <div class="stat-label">лет на рынке</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num">4.9</div>
+          <div class="stat-label">средняя оценка</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section" aria-labelledby="mission-title">
+    <div class="container">
+      <div class="about-mission-grid">
+        <div class="about-mission-text reveal">
+          <p class="section-eyebrow">Наша миссия</p>
+          <h2 class="section-title" id="mission-title">Аквариумистика<br>для каждого</h2>
+          <p class="about-text">Мы верим, что живой аквариум — это не привилегия, а доступное удовольствие. AquaFlow объединяет лучших поставщиков, разводчиков и производителей, чтобы вы получали всё необходимое в одном месте по честным ценам.</p>
+          <p class="about-text">Наша команда состоит из опытных аквариумистов, которые готовы помочь как новичкам, делающим первые шаги, так и профессионалам, оборудующим выставочные аквариумы.</p>
+          <a href="catalog.html" class="btn btn-primary" style="margin-top:24px">Перейти в каталог</a>
+        </div>
+        <div class="about-mission-cards reveal">
+          <div class="about-value-card">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div class="about-value-title">Забота о животных</div>
+            <p class="about-value-desc">Все живые питомцы поставляются из проверенных хозяйств с соблюдением стандартов содержания.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="about-value-title">Гарантия качества</div>
+            <p class="about-value-desc">Работаем только с сертифицированными брендами и даём 30-дневную гарантию возврата.</p>
+          </div>
+          <div class="about-value-card">
+            <div class="about-value-icon">
+              <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="about-value-title">Экспертная поддержка</div>
+            <p class="about-value-desc">Отвечаем на вопросы 7 дней в неделю — по телефону, в чате и по email.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" aria-labelledby="team-title" style="background:var(--bg-muted)">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Команда</p>
+        <h2 class="section-title" id="team-title">Люди, которые любят аквариумы</h2>
+        <p class="section-sub">Наши специалисты — практикующие аквариумисты с многолетним опытом.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-avatar"><img src="https://picsum.photos/seed/person-alexei/200/200" alt="Алексей Морозов" loading="lazy"></div>
+          <div class="team-name">Алексей Морозов</div>
+          <div class="team-role">Основатель и CEO</div>
+          <p class="team-bio">Аквариумист с 20-летним стажем. Основал AquaFlow в 2012 году, чтобы сделать качественное оборудование доступным для всех.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><img src="https://picsum.photos/seed/person-elena/200/200" alt="Елена Крылова" loading="lazy"></div>
+          <div class="team-name">Елена Крылова</div>
+          <div class="team-role">Главный ихтиолог</div>
+          <p class="team-bio">Кандидат биологических наук. Консультирует по выбору и совместимости видов рыб, контролирует качество живых питомцев.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><img src="https://picsum.photos/seed/person-dmitry/200/200" alt="Дмитрий Васин" loading="lazy"></div>
+          <div class="team-name">Дмитрий Васин</div>
+          <div class="team-role">Технический эксперт</div>
+          <p class="team-bio">15 лет в аквариумной технике. Тестирует каждую модель фильтра, освещения и оборудования до появления на сайте.</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-avatar"><img src="https://picsum.photos/seed/person-maria/200/200" alt="Мария Соколова" loading="lazy"></div>
+          <div class="team-name">Мария Соколова</div>
+          <div class="team-role">Менеджер сообщества</div>
+          <p class="team-bio">Ведёт клуб аквариумистов AquaFlow, организует онлайн-вебинары и обучающие материалы для новичков.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners / brands -->
+  <section class="section" aria-labelledby="brands-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Партнёры</p>
+        <h2 class="section-title" id="brands-title">Официальные дистрибьюторы</h2>
+        <p class="section-sub">Работаем только с авторизованными поставщиками ведущих мировых брендов.</p>
+      </div>
+      <div class="about-brands-grid reveal">
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Eheim</div>
+          <div class="about-brand-desc">Фильтрация, насосы</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">JBL</div>
+          <div class="about-brand-desc">Корма, химия, оборудование</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Tetra</div>
+          <div class="about-brand-desc">Корма, аквариумы</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Aquael</div>
+          <div class="about-brand-desc">Аквариумы, фильтрация</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Sera</div>
+          <div class="about-brand-desc">Корма, лечение</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Chihiros</div>
+          <div class="about-brand-desc">LED-освещение</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Dennerle</div>
+          <div class="about-brand-desc">Растения, CO₂, грунты</div>
+        </div>
+        <div class="about-brand-chip">
+          <div class="about-brand-name">Fluval</div>
+          <div class="about-brand-desc">Фильтры, аквариумы</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" aria-labelledby="contact-title" style="background:var(--bg-muted)">
+    <div class="container">
+      <div class="section-head">
+        <p class="section-eyebrow">Контакты</p>
+        <h2 class="section-title" id="contact-title">Свяжитесь с нами</h2>
+        <p class="section-sub">Мы всегда рады помочь с выбором и ответить на любые вопросы.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="tel:+78005551234">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.38 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-label">Телефон</div>
+          <div class="contact-card-val">8 800 555-12-34</div>
+          <div class="contact-card-note">Пн–Вс, 9:00–21:00 · Бесплатно</div>
+        </a>
+        <a class="contact-card reveal" href="mailto:hello@aquaflow.ru">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-val">hello@aquaflow.ru</div>
+          <div class="contact-card-note">Ответ в течение 2 часов</div>
+        </a>
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-card-label">Адрес</div>
+          <div class="contact-card-val">Москва, ул. Аквариумная, 7</div>
+          <div class="contact-card-note">Шоурум: Пн–Вс, 10:00–19:00</div>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div class="contact-card-label">Онлайн-чат</div>
+          <div class="contact-card-val">Telegram / WhatsApp</div>
+          <div class="contact-card-note">Круглосуточно</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">AquaFlow</a>
+          <p class="footer-brand-desc">Всё для вашего аквариума — от живых рыбок до профессионального оборудования. Создайте подводный мир своей мечты.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Каталог</p>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Все товары</a></li>
+            <li><a href="catalog.html?cat=Рыбки">Рыбки</a></li>
+            <li><a href="catalog.html?cat=Аквариумы">Аквариумы</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Компания</p>
+          <ul class="footer-links">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="login.html">Кабинет</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Покупателям</p>
+          <ul class="footer-links">
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Возврат</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> AquaFlow. Все права защищены.</p>
+      <p class="footer-credit">Created by <a href="https://t.me/xghostyyy" target="_blank" rel="noopener">xghostyyy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AquaFlow — Всё для вашего аквариума</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- Navbar (hero mode — transparent) -->
+<header class="navbar on-hero" id="navbar">
+  <nav class="navbar-inner container" aria-label="Главная навигация">
+    <a href="index.html" class="nav-logo">AquaFlow</a>
+    <ul class="nav-links" style="list-style:none">
+      <li><a href="index.html"   class="nav-link on-hero active">Главная</a></li>
+      <li><a href="catalog.html" class="nav-link on-hero">Каталог</a></li>
+      <li><a href="about.html"   class="nav-link on-hero">О компании</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="cart.html" class="nav-cart-btn on-hero" aria-label="Корзина">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        Корзина
+        <span class="cart-badge" aria-live="polite">0</span>
+      </a>
+      <a href="login.html" class="nav-login-btn on-hero">Войти</a>
+    </div>
+    <button class="hamburger hero-mode" id="burger" aria-label="Меню" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+  </nav>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Главная</a>
+    <a href="catalog.html">Каталог</a>
+    <a href="about.html">О компании</a>
+    <a href="cart.html">Корзина</a>
+    <a href="login.html">Войти / Регистрация</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" aria-label="Главный баннер">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-radial" aria-hidden="true"></div>
+  <div class="hero-bubbles" aria-hidden="true">
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content-grid">
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="#67E8F9" stroke="none"><circle cx="12" cy="12" r="12"/></svg>
+          Лучший выбор аквариумистов
+        </div>
+        <h1 class="hero-title">
+          Создайте свой<br>
+          <span class="hero-title-accent">идеальный</span><br>
+          подводный мир
+        </h1>
+        <p class="hero-sub">
+          Аквариумы, рыбки, оборудование и декор — всё для создания живого произведения искусства у вас дома.
+        </p>
+        <div class="hero-actions">
+          <a href="catalog.html" class="btn btn-white btn-lg">Перейти в каталог</a>
+          <a href="about.html"   class="btn btn-ghost-white">О компании</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-dot"></span>15 000+ клиентов</div>
+          <div class="trust-item"><span class="trust-dot"></span>Рейтинг 4.9 / 5</div>
+          <div class="trust-item"><span class="trust-dot"></span>Доставка от 2 дней</div>
+        </div>
+      </div>
+
+      <!-- Floating cards visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="float-card card-a">
+          <div class="float-card-img"><img src="https://picsum.photos/seed/neon-tetra/120/120" alt="Неон тетра" loading="lazy"></div>
+          <div class="float-card-name">Неон тетра</div>
+          <div class="float-card-price">120 ₽</div>
+        </div>
+        <div class="float-card card-b">
+          <div class="float-card-img"><img src="https://picsum.photos/seed/eheim-classic/120/120" alt="Eheim Classic" loading="lazy"></div>
+          <div class="float-card-name">Eheim Classic 150</div>
+          <div class="float-card-price">3 200 ₽</div>
+        </div>
+        <div class="float-card card-c">
+          <div class="float-card-img"><img src="https://picsum.photos/seed/anubias-nana/120/120" alt="Анубиас" loading="lazy"></div>
+          <div class="float-card-name">Анубиас нана</div>
+          <div class="float-card-price">280 ₽</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#F0F9FF"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Category pills -->
+<section class="cats-section" aria-label="Категории">
+  <div class="container">
+    <div class="cats-scroll scrollbar-none" id="home-cats" role="list"></div>
+  </div>
+</section>
+
+<!-- Featured products -->
+<section class="section" aria-labelledby="featured-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Популярное</p>
+      <h2 class="section-title" id="featured-title">Хиты продаж</h2>
+      <p class="section-sub">Товары, которые выбирают чаще всего — от новичков до профессионалов.</p>
+    </div>
+    <div class="products-grid" id="featured-grid"></div>
+    <div style="text-align:center;margin-top:40px">
+      <a href="catalog.html" class="btn btn-outline btn-lg">Смотреть весь каталог</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="trust-section" aria-label="Наши преимущества">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <div class="trust-card-title">Живые рыбки</div>
+        <div class="trust-card-text">Широкий выбор видов от проверенных разводчиков с гарантией здоровья.</div>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="trust-card-title">Быстрая доставка</div>
+        <div class="trust-card-text">Доставляем по всей России от 2 дней. Живых питомцев — специальной упаковкой.</div>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-card-title">Гарантия качества</div>
+        <div class="trust-card-text">Только сертифицированное оборудование ведущих мировых брендов.</div>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-card-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="trust-card-title">Экспертная помощь</div>
+        <div class="trust-card-text">Консультации опытных аквариумистов — подберём идеальный вариант.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-section" aria-label="Статистика">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="reveal"><div class="stat-num" id="stat-clients">0</div><div class="stat-label">довольных клиентов</div></div>
+      <div class="reveal"><div class="stat-num" id="stat-orders">0</div><div class="stat-label">выполненных заказов</div></div>
+      <div class="reveal"><div class="stat-num">4.9</div><div class="stat-label">средняя оценка</div></div>
+      <div class="reveal"><div class="stat-num">24</div><div class="stat-label">категории товаров</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Brands -->
+<section class="brands-section" aria-label="Бренды">
+  <div class="container">
+    <div class="brands-eyebrow">Наши партнёры</div>
+    <div class="brands-row">
+      <span class="brand-chip">Eheim</span>
+      <span class="brand-chip">JBL</span>
+      <span class="brand-chip">Tetra</span>
+      <span class="brand-chip">Aquael</span>
+      <span class="brand-chip">Sera</span>
+      <span class="brand-chip">Chihiros</span>
+      <span class="brand-chip">Dennerle</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-brand">AquaFlow</a>
+          <p class="footer-brand-desc">Всё для вашего аквариума — от живых рыбок до профессионального оборудования. Создайте подводный мир своей мечты.</p>
+        </div>
+        <div>
+          <p class="footer-col-title">Каталог</p>
+          <ul class="footer-links">
+            <li><a href="catalog.html">Все товары</a></li>
+            <li><a href="catalog.html?cat=Рыбки">Рыбки</a></li>
+            <li><a href="catalog.html?cat=Аквариумы">Аквариумы</a></li>
+            <li><a href="catalog.html?cat=Фильтры">Фильтры</a></li>
+            <li><a href="catalog.html?cat=Корма">Корма</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Компания</p>
+          <ul class="footer-links">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="about.html">Партнёры</a></li>
+            <li><a href="login.html">Личный кабинет</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Покупателям</p>
+          <ul class="footer-links">
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer-bottom">
+      <p class="footer-copy">© <span id="year"></span> AquaFlow. Все права защищены.</p>
+      <p class="footer-credit">Created by <a href="https://t.me/xghostyyy" target="_blank" rel="noopener">xghostyyy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+/* Home-specific */
+document.addEventListener('DOMContentLoaded', () => {
+  /* Category pills */
+  const catsEl = document.getElementById('home-cats');
+  if (catsEl) {
+    catsEl.innerHTML = ['Все'].concat(CATEGORIES).map(c => {
+      const emoji = c === 'Все' ? '✨' : (CAT_EMOJI[c] || '');
+      return `<a href="catalog.html${c==='Все'?'':'?cat='+encodeURIComponent(c)}" class="cat-pill" role="listitem">
+        <span class="cat-pill-emoji">${emoji}</span>${c}
+      </a>`;
+    }).join('');
+  }
+
+  /* Featured products — badges first, then top rated */
+  const grid = document.getElementById('featured-grid');
+  if (grid) {
+    const featured = [...PRODUCTS].sort((a,b) => (b.badge?1:0) - (a.badge?1:0) || b.rating - a.rating).slice(0, 8);
+    grid.innerHTML = featured.map(productCardHTML).join('');
+    initReveal();
+  }
+
+  /* Animated counters */
+  function animateCounter(el, target, suffix='') {
+    const start = performance.now();
+    const dur = 1800;
+    function step(now) {
+      const p = Math.min((now - start) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(ease * target).toLocaleString('ru-RU') + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  const ioStats = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      animateCounter(document.getElementById('stat-clients'), 15000, '+');
+      animateCounter(document.getElementById('stat-orders'),  50000, '+');
+      ioStats.disconnect();
+    });
+  }, { threshold: 0.4 });
+  const statsSection = document.querySelector('.stats-section');
+  if (statsSection) ioStats.observe(statsSection);
+});
+</script>
+</body>
+</html>
